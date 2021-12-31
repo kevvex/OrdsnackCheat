@@ -25,7 +25,7 @@ def main():
     print(len(set(permWord)))
 
     if wordList == set():
-        print('No result found')
+        print('No result found') 
 
     for word in wordList:
         print(word)
