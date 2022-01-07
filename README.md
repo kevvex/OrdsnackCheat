@@ -12,9 +12,9 @@ python3 word_extractor.py <LETTERS IN ORDSNACK>
 Example:
 ```
 python3 word_extractor.py rrdö
-```
-Output:
-```
+------------------------------
+Output
+------------------------------
 rörd
 dörr
 röd
