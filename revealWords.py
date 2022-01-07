@@ -12,23 +12,23 @@ def findWordList(lettersInWord, file):
         for word in newList:
             if perm == word:
                 matchList.append(word)
-            #print(f'{perm} == {word} -> {foundWord}')
+            #print(f'{perm} == {word}')
 
     return set(matchList)
 
-def main():
-    file = open('svenska-ord.txt', 'r')
-    word = sys.argv[1]
-    wordList = findWordList(word, file)
-
-    permWord = findWordPermutations(word)
-    print(len(set(permWord)))
-
-    if wordList == set():
-        print('No result found') 
-
+def printWords(wordList):
     for word in wordList:
         print(word)
+
+    if wordList == set():
+        print('No result found')
+
+def main():
+    file = open('sven.txt', 'r', encoding='UTF-8')
+    word = sys.argv[1]
+    wordList = findWordList(word, file)
+    printWords(wordList)
+    
     file.close()
 
 main()
