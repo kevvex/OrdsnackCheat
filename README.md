@@ -13,3 +13,18 @@ Example:
 ```
 python3 word_extractor.py rrdö
 ```
+Output:
+```
+rörd
+dörr
+röd
+rör
+dör
+dö
+ör
+rö
+öd
+d
+r
+ö
+```
