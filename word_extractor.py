@@ -1,5 +1,6 @@
 import sys
 from itertools import permutations
+from treeGen import TreeGenerator
 
 def fullPermList(word):
     word_len = len(word)
@@ -34,8 +35,12 @@ def main():
     if sortedList == set():
         print('No result found')
 
-    for word in sortedList:
-        print(word)
+    tree_gen = TreeGenerator(word, sortedList)
+
+    if sys.argv[3] == '-g':
+        tree_gen.generate_graphviz()
+    elif sys.argv[3] == '-d':
+        tree_gen.generate()
 
     file.close()
 
