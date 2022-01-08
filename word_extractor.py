@@ -25,8 +25,9 @@ def findWordList(word, file):
     return set(matchList)
 
 def main():
-    file = open('sven.txt', 'r', encoding='UTF-8')
-    word = sys.argv[1]
+    filename = sys.argv[1]
+    file = open(filename, 'r', encoding='UTF-8')
+    word = sys.argv[2]
     wordSet = findWordList(word, file)
     sortedList = sorted(list(wordSet), key=len, reverse=True)
 
