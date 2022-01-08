@@ -35,12 +35,11 @@ def main():
     if sortedList == set():
         print('No result found')
 
-    tree_gen = TreeGenerator(word, sortedList)
+    #for word in sortedList:
+    #    print(word)
 
-    if sys.argv[3] == '-g':
-        tree_gen.generate_graphviz()
-    elif sys.argv[3] == '-d':
-        tree_gen.generate()
+    tree_gen = TreeGenerator(word, sortedList)
+    tree_gen.generate()
 
     file.close()
 
