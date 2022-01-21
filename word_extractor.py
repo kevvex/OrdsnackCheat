@@ -35,9 +35,6 @@ def main():
     if sortedList == set():
         print('No result found')
 
-    #for word in sortedList:
-    #    print(word)
-
     tree_gen = TreeGenerator(word, sortedList)
     tree_gen.generate()
 

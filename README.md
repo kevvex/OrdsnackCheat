@@ -6,25 +6,30 @@ and OrdsnackCheater will reveal the words it knows
 
 # How to run the program
 ```
-python3 word_extractor.py <LETTERS IN ORDSNACK>
+python3 word_extractor.py <FILE> <LETTERS>
 ```
 
 Example:
 ```
-python3 word_extractor.py rrdö
+python3 word_extractor.py sven.txt rrdö
 ------------------------------
 Output
 ------------------------------
-rörd
-dörr
-röd
-rör
-dör
-dö
-ör
-rö
-öd
-d
-r
-ö
+Root
+├── Level 1
+│   ├── d
+│   ├── r
+│   └── ö
+├── Level 2
+│   ├── dö
+│   ├── rö
+│   ├── öd
+│   └── ör
+├── Level 3
+│   ├── dör
+│   ├── röd
+│   └── rör
+└── Level 4
+    ├── dörr
+    └── rörd
 ```

@@ -10,9 +10,6 @@ class TreeGenerator:
         self.word = word
         self.wordList = wordList
 
-        print(word)
-        print(wordList)
-
     def generateTreeLevels(self, word):
         self.tree.create_node("Root", "root")
         for i in range(len(word), 0, -1):
